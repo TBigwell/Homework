@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="theme-color" content="#4285f4">
+        <title>Swedbank Page</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <swed-header></swed-header>
+        <div class="main-content">
+            <page-title>Everyday banking</page-title>
+
+            <generic-tabs>
+                <div slot="tab">Payment</div>
+                <div slot="content">
+                    <payment-form></payment-form>
+                </div>
+                <div slot="tab">Calculator</div>
+                <div slot="content">
+                    <calculator-form></calculator-form>
+                </div>
+            </generic-tabs>
+
+            <generic-container>
+                <welcome-panel></welcome-panel>
+            </generic-container>
+        </div>
+        <swed-footer></swed-footer>
+        <script type="module" src="./index.js"></script>
+    </body>
+</html>
